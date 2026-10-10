@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "External validation of a segmentation-based Cobb angle method on the AASCE 2019 dataset: code and per-image results"
+authors:
+  - family-names: Riabko
+    given-names: Ivan
+    orcid: "https://orcid.org/0009-0000-6748-8686"
+  - family-names: Terets
+    given-names: Andrii
+    orcid: "https://orcid.org/0000-0003-3668-6131"
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-12"

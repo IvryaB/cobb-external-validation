@@ -1,0 +1,137 @@
+{
+ "n": 466,
+ "skipped_no_geometry": [],
+ "upper": {
+  "exact": 180,
+  "within1": 351,
+  "mean_offset": -0.08798283261802575,
+  "median_offset": 0.0
+ },
+ "lower": {
+  "exact": 204,
+  "within1": 353,
+  "mean_offset": -0.7489270386266095,
+  "median_offset": 0.0
+ },
+ "both_within1": 315,
+ "mae_agree": {
+  "n": 315,
+  "mae": 4.060244444444444,
+  "median": 2.822,
+  "bias": 0.22969206349206356,
+  "big": 19
+ },
+ "mae_disagree": {
+  "n": 151,
+  "mae": 7.305384105960264,
+  "median": 4.244,
+  "bias": -5.100894039735099,
+  "big": 36
+ },
+ "by_location": {
+  "thoracic": {
+   "n": 279,
+   "upper_mean": 0.6093189964157706,
+   "lower_mean": -0.06451612903225806,
+   "upper_w1": 83.87096774193549,
+   "lower_w1": 84.22939068100358,
+   "lower_short2": 9.67741935483871,
+   "tilt_mean": 3.4610358422939065,
+   "level_mean": -3.993154121863799
+  },
+  "thoracolumbar/lumbar": {
+   "n": 187,
+   "upper_mean": -1.1283422459893049,
+   "lower_mean": -1.7700534759358288,
+   "upper_w1": 62.56684491978609,
+   "lower_w1": 63.101604278074866,
+   "lower_short2": 36.36363636363637,
+   "tilt_mean": 3.432598930481283,
+   "level_mean": -6.370679144385027
+  }
+ },
+ "decomp": {
+  "err_mean": -1.4976008583690985,
+  "tilt_mean": 3.4496244635193136,
+  "level_mean": -4.947225321888412,
+  "tilt_mae": 4.953212446351931,
+  "tilt_mean_agree": 2.553266666666666,
+  "tilt_mae_agree": 4.310314285714286,
+  "n_exact": 100,
+  "tilt_mean_exact": 1.24881,
+  "mae_exact": 3.4186900000000002,
+  "r_tilt_level": -0.44558708199422176
+ },
+ "other_any": {
+  "n": 80,
+  "mae": 6.449187499999999,
+  "big": 12,
+  "median": 3.4345,
+  "thoracic": {
+   "n": 25,
+   "mae": 3.4514000000000005,
+   "big": 0,
+   "pct": 8.960573476702509
+  },
+  "thoracolumbar/lumbar": {
+   "n": 55,
+   "mae": 7.811818181818182,
+   "big": 12,
+   "pct": 29.41176470588235
+  }
+ },
+ "mechanisms": {
+  "outside T1–L5": {
+   "n": 0
+  },
+  "other curve": {
+   "n": 12,
+   "mean_err": -25.055333333333333,
+   "under": 12,
+   "tl": 12,
+   "examples": [
+    "sunhl-1th-26-Jul-2016-88 B AP.jpg",
+    "sunhl-1th-20-Jul-2016-2 B AP.jpg",
+    "sunhl-1th-26-Jul-2016-81 A AP.jpg"
+   ]
+  },
+  "end shifted": {
+   "n": 24,
+   "mean_err": -14.961250000000001,
+   "under": 22,
+   "tl": 7,
+   "examples": [
+    "sunhl-1th-25-Jul-2016-15 A AP.jpg",
+    "sunhl-1th-10-Jan-2017-239 C AP.jpg",
+    "sunhl-1th-21-Nov-2016-132 A AP.jpg"
+   ]
+  },
+  "tilt only": {
+   "n": 19,
+   "mean_err": -1.6116842105263152,
+   "under": 10,
+   "tl": 6,
+   "examples": [
+    "sunhl-1th-09-Jan-2017-194 A AP.jpg",
+    "sunhl-1th-09-Jan-2017-207 B AP.jpg",
+    "sunhl-1th-21-Nov-2016-131 B AP.jpg"
+   ]
+  }
+ },
+ "other_detail": {
+  "above": 12,
+  "n": 12
+ },
+ "tilt_only_detail": {
+  "n": 19,
+  "short": 12,
+  "short_all_pct": 42.70386266094421,
+  "upper_thoracic": 11,
+  "upper_thoracic_all_pct": 40.987124463519315,
+  "over": 9
+ },
+ "shifted_detail": {
+  "lower_short": 21,
+  "upper_short": 5
+ }
+}
