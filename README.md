@@ -4,9 +4,10 @@ Code and per-image results for the manuscript *External Validation of a Segmenta
 Method for Cobb Angle Measurement: Accuracy and Failure Modes on 481 Radiographs*.
 
 The evaluated method is the open-source spine-segmentation method of Li et al. (BJR Artif Intell 2025;
-2(1):ubaf009), deployed unchanged in the RadTools platform. It was run on all 481 anteroposterior radiographs
-of the AASCE 2019 training set (SpineWeb Dataset 16). The reference is the largest Cobb angle computed from
-the curated vertebral-corner annotations of Kordon et al. (doi:10.5281/zenodo.4413665).
+2(1):ubaf009), run unchanged with the authors' published code and weights by a batch script. It was run on
+all 481 anteroposterior radiographs of the AASCE 2019 training set (SpineWeb Dataset 16). The reference is the
+largest Cobb angle computed from the curated vertebral-corner annotations of Kordon et al.
+(doi:10.5281/zenodo.4413665).
 
 ## Contents
 
@@ -14,7 +15,7 @@ the curated vertebral-corner annotations of Kordon et al. (doi:10.5281/zenodo.44
 
 | File | Content |
 |---|---|
-| `results.csv` | reference and RadTools largest Cobb angle, failure flag, absolute error |
+| `results.csv` | reference and the method's largest Cobb angle, failure flag, absolute error |
 | `ground_truth.csv` | reference angles computed from the landmarks, end vertebrae, apex, curve location, image size |
 | `image_flags.csv` | posterior instrumentation and external brace (visual screening) |
 | `levels_per_image.csv` | end vertebrae chosen by the method vs the reference, error decomposition, mechanism |
@@ -23,6 +24,9 @@ the curated vertebral-corner annotations of Kordon et al. (doi:10.5281/zenodo.44
 | `aasce_test98_radtools.csv` | angles returned for the 98 challenge test images (no reference available) |
 | `metrics.json`, `analysis2.json`, `levels_summary.json`, `levels.json`, `run_stats.json` | primary and level analyses |
 | `cobb_postproc.json`, `cobb_turning_per_image.json`, `cobb_oracle.json`, `cobb_recalibration.json`, `cobb_unet_eval_unet_masks_gpu.json` | post hoc analyses |
+
+The `radtools` and `radtools_all` columns, `aasce_test98_radtools.csv` and the `radtools_run/` folder keep
+the names of the processing run; they hold the angles returned by the evaluated method.
 
 `analysis/` — Python scripts (Python 3.12, NumPy, SciPy, pandas, Pillow, OpenCV; PyTorch for `spine_unet.py`):
 
